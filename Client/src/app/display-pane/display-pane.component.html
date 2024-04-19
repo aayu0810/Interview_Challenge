@@ -1,0 +1,9 @@
+<!-- display-pane.component.html -->
+<div class="imagearea">
+  <div *ngIf="selectedImageUrl; else noImage">
+    <img class="image" [src]="selectedImageUrl" alt="Selected Image" />
+  </div>
+  <ng-template #noImage>
+    <p>No image selected</p>
+  </ng-template>
+</div>

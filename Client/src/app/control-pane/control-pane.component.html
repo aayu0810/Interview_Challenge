@@ -1,0 +1,8 @@
+<div class="control-pane">
+  <!-- control-pane.component.html -->
+  <select (change)="onImageSelected($event)">
+    <option *ngFor="let image of images" [value]="image.value">
+      {{ image.label }}
+    </option>
+  </select>
+</div>

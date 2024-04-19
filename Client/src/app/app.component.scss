@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 20px; /* adjust the gap as you see fit */
+
+  .imagearea {
+    max-width: 60% !important;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
